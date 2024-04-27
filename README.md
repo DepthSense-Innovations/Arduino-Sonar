@@ -5,10 +5,11 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=DepthSense-Innovations_Arduino-Sonar&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=DepthSense-Innovations_Arduino-Sonar)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=DepthSense-Innovations_Arduino-Sonar&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=DepthSense-Innovations_Arduino-Sonar)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=DepthSense-Innovations_Arduino-Sonar&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=DepthSense-Innovations_Arduino-Sonar)
+<a href='https://coveralls.io/github/DepthSense-Innovations/Arduino-Sonar?branch=main'><img src='https://coveralls.io/repos/github/DepthSense-Innovations/Arduino-Sonar/badge.svg?branch=main' alt='Coverage Status' /></a>
+
 
 # Arduino-Sonar
 Our Project for  the finale module of the second year in IT Cariera
 
 
-<a href='https://coveralls.io/github/DepthSense-Innovations/Arduino-Sonar?branch=main'><img src='https://coveralls.io/repos/github/DepthSense-Innovations/Arduino-Sonar/badge.svg?branch=main' alt='Coverage Status' /></a>
 
