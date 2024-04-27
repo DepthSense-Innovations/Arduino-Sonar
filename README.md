@@ -11,5 +11,8 @@
 # Arduino-Sonar
 Our Project for  the finale module of the second year in IT Cariera
 
+![image](https://github.com/DepthSense-Innovations/Arduino-Sonar/assets/97468479/b4e9f425-d7c7-4bfa-8e52-a5e539ff7485)
+
+
 
 
