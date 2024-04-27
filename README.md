@@ -8,3 +8,7 @@
 
 # Arduino-Sonar
 Our Project for  the finale module of the second year in IT Cariera
+
+
+<a href='https://coveralls.io/github/DepthSense-Innovations/Arduino-Sonar?branch=main'><img src='https://coveralls.io/repos/github/DepthSense-Innovations/Arduino-Sonar/badge.svg?branch=main' alt='Coverage Status' /></a>
+
