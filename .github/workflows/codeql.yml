@@ -88,3 +88,8 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
+        
+    - name: Coveralls GitHub Action
+      uses: coverallsapp/github-action@v2.2.3
+            
+            
