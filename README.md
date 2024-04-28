@@ -85,12 +85,21 @@ Ensure all connections are secure and the components are properly powered before
       
 #### The loop() function:
 
-    Sets the servo angle based on the servoAngle variable.
-    Increments or decrements the servoAngle based on the direction variable.
-    Reverses the direction (direction *= -1) when the servo angle reaches the limits (10 or 170).
-    Delays for refreshDelay milliseconds.
-    Triggers the ultrasonic sensor to measure distance.
-    Calculates the distance using the duration of the pulse.
-    Prints the distance on the LCD screen along with the string "Distance: " and the unit "cm".
+Sets the servo angle based on the servoAngle variable.
+Increments or decrements the servoAngle based on the direction variable.
+Reverses the direction (direction *= -1) when the servo angle reaches the limits (10 or 170).
+Delays for refreshDelay milliseconds.
+Triggers the ultrasonic sensor to measure distance.
+Calculates the distance using the duration of the pulse.
+Prints the distance on the LCD screen along with the string "Distance: " and the unit "cm".
+
+    
+
+
+https://github.com/DepthSense-Innovations/Arduino-Sonar/assets/97468479/cdb42350-47b3-4bb9-8683-3ac1c20a6a8f
+
+
+
+
 
 
