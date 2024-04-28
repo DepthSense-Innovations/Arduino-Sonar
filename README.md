@@ -99,7 +99,9 @@ Prints the distance on the LCD screen along with the string "Distance: " and the
 https://github.com/DepthSense-Innovations/Arduino-Sonar/assets/97468479/cdb42350-47b3-4bb9-8683-3ac1c20a6a8f
 
 
+#### Conclusion
 
+The Arduino Sonar project combines an ultrasonic distance sensor, servo motor, and Arduino UNO R3 to measure distances and display results on an LCD screen. Setup involves connecting components meticulously. During operation, the servo motor adjusts the sensor's angle for comprehensive distance measurement. The Arduino calculates distance based on ultrasonic pulse return time. Results are displayed in real-time on the LCD screen in centimeters. This project offers a user-friendly solution for accurate distance sensing, suitable for various applications.
 
 
 
