@@ -11,12 +11,12 @@ Servo myServo;
 #define servoMinAngle 480 //min servo angle in microseconds
 #define servoMaxAngle 2500 //max servo angle in microseconds
 int servoAngle = 10;
+int direction = 1;
 
 #define trigPin 9
 #define echoPin 10
 long duration;
 int distance;
-int direction = 1;
 
 void setup() {
   myServo.attach(servoPin, servoMinAngle, servoMaxAngle);
