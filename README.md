@@ -13,12 +13,12 @@
 This project utilizes an Arduino UNO R3 along with various components to create a moving sonar system that displays distance measurements on an LCD screen.
 
 #### Components:
-- 1 x Arduino UNO R3
-- 1 x LCD 16 x 2
-- 1 x Ultrasonic Distance Sensor (4-pin)
-- 1 x Positional Micro Servo
-- 1 x 1 kΩ Potentiometer
-- 1 x >=300Ω Resistor
+    - 1 x Arduino UNO R3
+    - 1 x LCD 16 x 2
+    - 1 x Ultrasonic Distance Sensor (4-pin)
+    - 1 x Positional Micro Servo
+    - 1 x 1 kΩ Potentiometer
+    - 1 x >=300Ω Resistor
 
 #### Circuit Diagram:
 
@@ -60,5 +60,37 @@ The Arduino Sonar project integrates an ultrasonic distance sensor and a servo m
 #### Note:
 Ensure all connections are secure and the components are properly powered before uploading the code to the Arduino UNO R3. Adjustments to the servo motor angle range and LCD pin configuration may be necessary based on the specific components used.
 
+### Deep Explanation:
+
+
+![image](https://github.com/DepthSense-Innovations/Arduino-Sonar/assets/97468479/dcdc0243-0505-411e-b18a-7911de09a7f2)
+
+ - #include <LiquidCrystal.h>: This line includes the LiquidCrystal library, which provides functions to interface with LCD displays.
+ - #include "Servo.h": This line includes the Servo library, which allows control of servo motors.
+ - LiquidCrystal lcd(1, 2, 4, 5, 6, 7);: This line initializes an LCD object named lcd with the pin numbers connected to the LCD display.
+ - Servo myServo;: This line declares a Servo object named myServo.
+ - #define refreshDelay 30: This line defines a constant refreshDelay with a value of 30 milliseconds, which determines the delay between servo angle updates.
+ - #define servoPin 12: This line defines a constant servoPin with the value 12, representing the pin connected to the servo motor.
+ - #define servoAngleIncrement 1: This line defines a constant servoAngleIncrement with the value 1, representing the increment by which the servo angle changes.
+ - #define servoMinAngle 480: This line defines a constant servoMinAngle with the value 480, representing the minimum angle (in microseconds) for the servo motor.
+ - #define servoMaxAngle 2500: This line defines a constant servoMaxAngle with the value 2500, representing the maximum angle (in microseconds) for the servo motor.
+ - int servoAngle = 10;: This line declares an integer variable servoAngle and initializes it to 10, representing the initial angle of the servo motor.
+ - int direction = 1;: This line declares an integer variable direction and initializes it to 1, representing the direction of servo movement.
+ - #define trigPin 9: This line defines a constant trigPin with the value 9, representing the pin connected to the ultrasonic sensor's trigger.
+ - #define echoPin 10: This line defines a constant echoPin with the value 10, representing the pin connected to the ultrasonic sensor's echo.
+ - long duration;: This line declares a long integer variable duration to store the duration of the pulse from the ultrasonic sensor.
+ - int distance;: This line declares an integer variable distance to store the calculated distance from the ultrasonic sensor.
+ - void setup() { ... }: This function runs once when the Arduino board is powered on or reset. It initializes the servo, LCD, and sets the pin modes.
+ - void loop() { ... }: This function runs repeatedly as long as the Arduino is powered on. It controls the servo motor's movement, reads the distance using the ultrasonic sensor, and displays the distance on the LCD.
+      
+#### The loop() function:
+
+    Sets the servo angle based on the servoAngle variable.
+    Increments or decrements the servoAngle based on the direction variable.
+    Reverses the direction (direction *= -1) when the servo angle reaches the limits (10 or 170).
+    Delays for refreshDelay milliseconds.
+    Triggers the ultrasonic sensor to measure distance.
+    Calculates the distance using the duration of the pulse.
+    Prints the distance on the LCD screen along with the string "Distance: " and the unit "cm".
 
 
