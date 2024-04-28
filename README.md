@@ -8,7 +8,7 @@
 <a href='https://coveralls.io/github/DepthSense-Innovations/Arduino-Sonar?branch=main'><img src='https://coveralls.io/repos/github/DepthSense-Innovations/Arduino-Sonar/badge.svg?branch=main' alt='Coverage Status' /></a>
 
 
-### Arduino Sonar 
+### Arduino Sonar  [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 This project utilizes an Arduino UNO R3 along with various components to create a moving sonar system that displays distance measurements on an LCD screen.
 
