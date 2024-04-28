@@ -8,11 +8,57 @@
 <a href='https://coveralls.io/github/DepthSense-Innovations/Arduino-Sonar?branch=main'><img src='https://coveralls.io/repos/github/DepthSense-Innovations/Arduino-Sonar/badge.svg?branch=main' alt='Coverage Status' /></a>
 
 
-# Arduino-Sonar
-Our Project for  the finale module of the second year in IT Cariera
+### Arduino Sonar 
+
+This project utilizes an Arduino UNO R3 along with various components to create a moving sonar system that displays distance measurements on an LCD screen.
+
+#### Components:
+- 1 x Arduino UNO R3
+- 1 x LCD 16 x 2
+- 1 x Ultrasonic Distance Sensor (4-pin)
+- 1 x Positional Micro Servo
+- 1 x 1 kΩ Potentiometer
+- 1 x >=300Ω Resistor
+
+#### Circuit Diagram:
 
 ![image](https://github.com/DepthSense-Innovations/Arduino-Sonar/assets/97468479/b4e9f425-d7c7-4bfa-8e52-a5e539ff7485)
 
+#### Description:
+The Arduino Sonar project integrates an ultrasonic distance sensor and a servo motor controlled by an Arduino UNO R3. The ultrasonic sensor measures distances, and the servo motor rotates to provide a sweeping motion for distance detection. The measured distance is displayed on the LCD screen in real-time.
+
+#### Setup:
+1. Connect the LCD to the Arduino UNO R3:
+   - LCD RS pin to digital pin 1
+   - LCD Enable pin to digital pin 2
+   - LCD D4 pin to digital pin 4
+   - LCD D5 pin to digital pin 5
+   - LCD D6 pin to digital pin 6
+   - LCD D7 pin to digital pin 7
+
+2. Connect the servo motor to the Arduino UNO R3:
+   - Servo control wire to digital pin 12
+   - Servo power wire to 5V
+   - Servo ground wire to GND
+
+3. Connect the ultrasonic distance sensor to the Arduino UNO R3:
+   - VCC to 5V
+   - GND to GND
+   - Trig pin to digital pin 9
+   - Echo pin to digital pin 10
+
+4. Add a 1 kΩ potentiometer between 5V and GND, with the wiper connected to analog pin A0.
+
+5. Place a resistor with a resistance greater than or equal to 300Ω between the LCD backlight positive (+) and GND.
+
+#### Functionality:
+- The servo motor rotates incrementally, changing the angle of the ultrasonic sensor.
+- The ultrasonic sensor measures the distance to objects in its path.
+- The Arduino calculates the distance based on the time taken for the ultrasonic pulse to return.
+- Distance measurements are displayed on the LCD screen in centimeters.
+
+#### Note:
+Ensure all connections are secure and the components are properly powered before uploading the code to the Arduino UNO R3. Adjustments to the servo motor angle range and LCD pin configuration may be necessary based on the specific components used.
 
 
 
